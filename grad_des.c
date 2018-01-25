@@ -81,10 +81,10 @@ int main()
 	//predict test_data
 	output=predict_model(k,b,test_data);
 	
-	printf('counter = %d',i);
-	printf('para k=%f,b=%f',k,b);
-	printf('cost function: %f',j_old);
-	printf('output = %f',output);
+	printf('counter = %d/n',i);
+	printf('para k=%f,b=%f/n',k,b);
+	printf('cost function: %f/n',j_old);
+	printf('output = %f/n',output);
 	
 	return 0;	
 }
