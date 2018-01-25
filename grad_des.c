@@ -9,6 +9,7 @@ float predict_model(float k,float b,float x)
 	return h;
 }
 
+//cost function
 float cost_func(float k,float b,int m,float x[],float y[])
 {
 	float h,j;
@@ -22,7 +23,7 @@ float cost_func(float k,float b,int m,float x[],float y[])
 }
 
 //update paras b,k
-float gradient_des(float k,float b,float a,float x[],float y[])
+float gradient_des(float k,float b,float a,int m,float x[],float y[])
 {
 	float h;
 	float tmp1=0;
