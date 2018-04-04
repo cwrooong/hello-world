@@ -61,6 +61,21 @@ else
   echo "current zombie processes"
   ps -al | gawk '{print $2,$4}' | grep Z
 fi  
+echo
+################################################
+#Restore file Descriptor 
+#
+exec 1>$3 #restore output to STDOUT
+################################################
+#e-mail
+#$MAIL -a $REPORT -s "system statistics report for $DATE"
+##--$MAIL_TO < /dev/null
+#
+################################################
+#clean up
+# 
+#rm -f $REPORT
+
 
 
 
