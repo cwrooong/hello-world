@@ -1,0 +1,20 @@
+/**
+ * Definition for singly-linked list.
+ * struct ListNode {
+ *     int val;
+ *     struct ListNode *next;
+ * };
+ */
+struct ListNode* addTwoNumbers(struct ListNode* l1, struct ListNode* l2) {
+        //1. get the first number
+        int num_1=0;
+        int i=0;
+        struct ListNode* p=l1->next;
+        while(p==NULL)
+        {
+            num_1=num_1+p->val*(10^i);
+            i=i+1;
+            p=p->next;
+        }
+    return 0;
+}
